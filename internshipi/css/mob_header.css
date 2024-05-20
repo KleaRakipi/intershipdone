@@ -1,0 +1,134 @@
+.mobile-header {
+    display: none;
+    max-width: 100vw;
+    height: 68px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(217, 217, 217, 1);
+  }
+  .menu {
+    display: none;
+    gap: 6.107vw;
+    margin-left: 5.598vw;
+  }
+  .mobile-header h3 {
+    margin-left: 20.356vw;
+    font-family: "Cormorant";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.06px;
+    text-align: left;
+  }
+  .mobile-icons {
+    display: none;
+    margin-left: 21.12vw;
+    margin-right: 4.071vw;
+    gap: 5.883vw;
+  }
+
+  .dropdown {
+    display: none;
+}
+.menu {
+    margin: 0;
+}
+
+#menuDropbtn {
+    background-color:rgba(217, 217, 217, 1); 
+    border: none;
+    cursor: pointer;
+    padding-left: 5.598vw;
+}
+
+.dropbtn {
+    cursor: pointer;
+    border: none; 
+    padding: 0; 
+    background-color: transparent; 
+    display: block;
+}  
+
+#menuDropdown {
+    display: none;
+    position: absolute;
+    margin-left: 6%;
+    width: 90%;
+    height: 75vw;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+#menuDropdown .menu-content {
+    padding: 15px;
+}
+
+
+#menuDropdown .menu-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menuDropdown .menu-content ul li {
+    padding: 8px 0;
+    font-family: "Lora";
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid rgba(183, 146, 106, 1);
+    text-align: left;
+}
+
+#menuDropdown .phone, #menuDropdown .location {
+    margin-top: 5px;
+    display: inline-flex;
+    gap: 10px;
+}
+
+
+#menuDropdown.show {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .menuDropdown {
+        background-color: rgba(217, 217, 217, 1);
+        }
+        .dropdown {
+        display: block;
+        }
+        .dropdown-content {
+        display: none; 
+        }  
+        .mobile-header {
+        display: flex;
+        }
+       .hidden {
+        display: none;
+        width: 100%;
+        padding-right: 5%;
+        padding-left: 5%;
+        height: 50px;
+        background-color: #f9f9f9;
+        }  
+       .hide {
+        display: none;
+        }
+       .show {
+        display: flex;
+        }
+        #searchBar input {
+        background-color: #f9f9f9;
+        border: none;
+        }
+        .menu {
+        display: flex; 
+        align-items: center;
+        }
+        .mobile-icons {
+        display: flex;
+        }
+}
